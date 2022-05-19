@@ -1,1 +1,7 @@
-Hello
+# CSS Snippets Codes
+
+## Introduction
+
+This is a reference collection of CSS snippets codes. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+
+![Banner Image](github-readme-contents/css-banner.jpg)
