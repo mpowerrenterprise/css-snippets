@@ -7,4 +7,7 @@ This is a reference collection of CSS snippets codes. Cascading Style Sheets (CS
 ![Banner Image](github-readme-contents/css-banner-image.png)
 
 
-[CSS Animations](0-css-animation/)
+## Contents
+
+
+1. [CSS Animations](0-css-animation/)
