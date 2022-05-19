@@ -11,4 +11,3 @@ This is a reference collection of CSS snippets codes. Cascading Style Sheets (CS
 
 
 1. [CSS Animations](0-css-animation/)
-2. [CSS Animations](0-css-animation/)

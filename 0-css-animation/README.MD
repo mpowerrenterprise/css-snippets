@@ -1,6 +1,6 @@
 # CSS Animation Snippets
 
-## Example 1
+## Example 0
 
 ####  HTML CODE
 
