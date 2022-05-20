@@ -293,3 +293,190 @@ body {
 #### Output
 
 ![Banner Image](github-readme-contents/example-4-output.gif)
+
+## Example 5
+
+####  HTML CODE
+
+```html
+<html>
+	<head>
+		<title>Animation Basics</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<img src="tall_robot.svg" width="150" alt="tall robot" class="robot" />
+	</div>
+
+	</body>
+</html>
+```
+
+####  CSS CODE
+
+```css
+body {
+	background-image: url('background.png');
+	background-size: cover;
+	background-position: 0px -250px;
+}
+
+.wrapper {
+	margin: 20em auto 2em auto;
+	width:80%;
+	position:relative;
+}
+
+.robot {
+	animation-name: slide;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 2;/*We should make to 2*/
+	animation-fill-mode:forwards;
+    animation-direction:alternate-reverse;/*This will move the element from reverse to start*/
+}
+
+@keyframes slide {
+	from {transform: translateX(0);}
+	to {transform: translateX(900px);}
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-5-output.gif)
+
+## Example 6
+
+####  HTML CODE
+
+```html
+<html>
+	<head>
+		<title>Animation Basics</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<img src="tall_robot.svg" width="150" alt="tall robot" class="robot" />
+	</div>
+
+	</body>
+</html>
+```
+
+####  CSS CODE
+
+```css
+body {
+	background-image: url('background.png');
+	background-size: cover;
+	background-position: 0px -250px;
+}
+
+.wrapper {
+	margin: 20em auto 2em auto;
+	width:80%;
+	position:relative;
+}
+
+.robot {
+	animation-name: slide;
+	animation-duration: 3s;
+	animation-timing-function: cubic-bezier(.41,.07,.62,.91) ;
+	animation-fill-mode:forwards;
+	animation-direction: alternate;
+	animation-iteration-count: 4;
+}
+
+@keyframes slide {
+	0%{transform: translateX(0);}
+	20% {transform:translateX(200px);}
+	35% {transform:translateX(0);}
+	90% {transform: translateX(980px);}
+	100% {transform: translateX(900px);}
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-6-output.gif)
+
+## Example 7
+
+####  HTML CODE
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clouds</title>
+	<link rel="stylesheet" href="styles.css" media="all" />
+
+</head>
+<body>
+
+<div class="sky">
+	<div class="cloud fcloud01"></div>
+	<div class="cloud fcloud02"></div>
+</div>
+
+</body>
+</html>
+```
+
+####  CSS CODE
+
+```css
+body {
+  background:#678bb3;
+  padding:0;
+  margin:0;
+}
+
+.sky {
+  width:100%;
+  height:1000px;
+  background: transparent url(img/sky.jpg) top left no-repeat;
+  background-size: 100% 100%;
+  margin:auto;
+  position:relative;
+}
+
+.cloud {
+  width: 250px;
+  height:200px;
+  position:absolute;
+  background:transparent url(img/front_cloud.png) 0 0 no-repeat;
+}
+
+.fcloud01 {
+  top:100px;
+  z-index:100;
+
+      animation:drift 25s linear infinite;
+      /*Animation name,duration,type of timing function , iteration-count*/
+  }
+
+.fcloud02 {
+  top:240px;
+  z-index: 200;
+
+      animation:drift 45s  linear infinite;
+        /*Animation name,duration,delay,type of timing function , iteration-count*/
+}
+
+@keyframes drift {
+
+  from{transform:translateX(-255px);}
+  to{transform:translateX(1350px);}
+
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-7-output.gif)
