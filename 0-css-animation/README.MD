@@ -24,10 +24,6 @@
   <div class="msg">new!</div>
 </div>
 
-
-
-
-
   </body>
 </html>
 
@@ -72,6 +68,68 @@ body {padding:6em; background:#fcfcfc;}
     0%{transform:rotate(0turn);}
     100%{transform:rotate(1turn);}
     /*1turn means it will completly rotate once.*/
+
+}
+
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-0-output.gif)
+
+## Example 1
+
+####  HTML CODE
+
+```html
+
+<html>
+	<head>
+		<title>Animation Basics</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<img src="tall_robot.svg" width="150" alt="tall robot" class="robot" />
+	</div>
+
+	</body>
+</html>
+
+```
+
+####  CSS CODE
+
+```css
+body {
+	background-image: url('background.png');
+	background-size: cover;
+	background-position: 0px -250px;
+}
+
+.wrapper {
+	margin: 20em auto 2em auto;
+	width:80%;
+	position:relative;
+}
+
+.robot {
+
+  animation-name:slide;
+  animation-duration:3s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:1;/*infinite will not stop*/
+  animation-delay:1s;
+  animation-fill-mode:forwards;/*The aniamtion-fill-mode is useful to decide how to finish the animation*/
+                               /*backwords and both*/
+}
+
+@keyframes slide{
+
+	from{transform:translate(0px);}
+	to{transform:translate(900px);}
+
 
 }
 
