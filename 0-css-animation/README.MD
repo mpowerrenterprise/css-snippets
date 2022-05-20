@@ -138,3 +138,47 @@ body {
 #### Output
 
 ![Banner Image](github-readme-contents/example-1-output.gif)
+
+## Example 2
+
+####  HTML CODE
+
+```html
+<html>
+	<head>
+		<title>animation-fill-mode</title>
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+
+	<body>		
+		<img class="ball" src="ball.png" alt="ball"width="111" height="111" />
+	</body>
+
+</html>
+```
+
+####  CSS CODE
+
+```css
+
+body {margin: 4em 10%; background:#493F5B;}
+
+ .ball {
+	animation-name: move-left-right;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+ 	animation-delay:1s;
+    animation-fill-mode:both;
+}
+
+@keyframes move-left-right {
+	0% {transform: translateX(100px) rotate(0turn);}
+	20% {transform: translateX(-10px) rotate(-0.5turn);}
+	100% {transform:translateX(450px) rotate(2turn);}			
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-2-output.gif)
