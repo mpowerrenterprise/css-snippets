@@ -2,7 +2,7 @@
 
 ## Example 0
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 
@@ -29,7 +29,7 @@
 
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {padding:6em; background:#fcfcfc;}
@@ -79,7 +79,7 @@ body {padding:6em; background:#fcfcfc;}
 
 ## Example 1
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 
@@ -99,7 +99,7 @@ body {padding:6em; background:#fcfcfc;}
 
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {
@@ -141,7 +141,7 @@ body {
 
 ## Example 2
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -157,7 +157,7 @@ body {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 
@@ -186,7 +186,7 @@ body {margin: 4em 10%; background:#493F5B;}
 
 ## Example 3
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -205,7 +205,7 @@ body {margin: 4em 10%; background:#493F5B;}
 
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {
@@ -241,7 +241,7 @@ body {
 
 ## Example 4
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -259,7 +259,7 @@ body {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 
@@ -296,7 +296,7 @@ body {
 
 ## Example 5
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -314,7 +314,7 @@ body {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {
@@ -350,7 +350,7 @@ body {
 
 ## Example 6
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -368,7 +368,7 @@ body {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {
@@ -407,7 +407,7 @@ body {
 
 ## Example 7
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <!DOCTYPE html>
@@ -428,7 +428,7 @@ body {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {
@@ -483,7 +483,7 @@ body {
 
 ## Example 8
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <!DOCTYPE html>
@@ -519,7 +519,7 @@ body {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 
@@ -656,7 +656,7 @@ section {
 
 ## Example 9
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <!DOCTYPE html>
@@ -686,7 +686,7 @@ section {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {
@@ -759,7 +759,7 @@ span:nth-child(7) {
 
 ## Example 10
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <!DOCTYPE html>
@@ -789,7 +789,7 @@ span:nth-child(7) {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 body {
