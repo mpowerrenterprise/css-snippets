@@ -182,3 +182,59 @@ body {margin: 4em 10%; background:#493F5B;}
 #### Output
 
 ![Banner Image](github-readme-contents/example-2-output.gif)
+
+
+## Example 3
+
+####  HTML CODE
+
+```html
+<html>
+	<head>
+		<title>Animation Basics</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<img src="tall_robot.svg" width="150" alt="tall robot" class="robot" />
+	</div>
+
+	</body>
+</html>
+
+```
+
+####  CSS CODE
+
+```css
+body {
+	background-image: url('background.png');
+	background-size: cover;
+	background-position: 0px -250px;
+}
+
+.wrapper {
+	margin: 20em auto 2em auto;
+	width:80%;
+	position:relative;
+}
+
+.robot {
+	animation-name: slide;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode:forwards;
+    animation-direction:reverse;/*This will run the animation reversly*/
+}
+
+@keyframes slide {
+	from {transform: translateX(0);}
+	to {transform: translateX(900px);}
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-3-output.gif)
