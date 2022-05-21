@@ -954,3 +954,123 @@ body {
 #### Output
 
 ![Banner Image](github-readme-contents/example-11-output.gif)
+
+## Example 12
+
+####  HTML CODE
+
+```html
+<html>
+	<head>
+		<title>Transforms</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<img src="london.jpg" width="500px" alt="London">
+		</div>
+	</div>
+
+	</body>
+</html>
+```
+
+####  CSS CODE
+
+```css
+
+body {
+	background-color: #D8E8FA;
+}
+
+.wrapper {
+	margin: 2em auto 2em auto;
+    perspective:300px;/* We must add perspective to make 3d effects to the content of the img.*/
+                       /*We can give 100px or less than it to make it much more better*/                         
+}
+
+img {
+	display:block;
+	margin: 0 auto;
+    transform:rotateY(45deg);/*This is the value for the rotate*/
+
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-12-output.png)
+
+## Example 0
+
+####  HTML CODE
+
+```html
+<html>
+	<head>
+		<title>Transition Basics</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<h2></h2>
+		<p>Roll into the future right now and buy your very own robot!</p>
+		<button>BUY NOW</button>
+	</div>
+
+	</body>
+</html>
+```
+
+####  CSS CODE
+
+```css
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,300,300italic,400italic,900italic);
+
+body {
+	background-color: #f7e4fe;
+	background-image: url('purple_diag_background.svg');
+	background-size: cover;
+	background-position: 0 -50px;
+	font-family: 'Lato', arial, helvetica, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+.wrapper {
+	margin: 12em auto 2em auto;
+	width:80%;
+	position:relative;
+}
+
+p {
+	color: white;
+	text-align: center;
+}
+
+button {
+	cursor: hand;
+	background-color: #ff8d35;
+	color: white;
+	font:weight: 900;
+	font-size: 1.2rem;
+	border: none;
+	padding:1em 3em;
+	margin: 2em auto;
+	display:block;
+    transition:background .5s ease-in, transform .5s .25s ease-in-out;
+
+    /*5s is the duration .25s is the delay for the transistion*/
+}
+
+button:hover {
+	background: #c61140;
+	transform: scale(1.2);
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-13-output.png)
