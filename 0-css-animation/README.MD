@@ -904,3 +904,53 @@ span:nth-child(7) {
 #### Output
 
 ![Banner Image](github-readme-contents/example-10-output.gif)
+
+## Example 11
+
+####  HTML CODE
+
+```html
+<html>
+	<head>
+		<title>Transform Basics</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<img src="blue_robot.svg" width="350" alt="tall robot" class="blue_robot" />
+	</div>
+
+	</body>
+</html
+```
+
+####  CSS CODE
+
+```css
+/* Animation Basics */
+body {
+	background-color: #D8E8FA;
+}
+
+.wrapper {
+	margin: 2em auto 2em auto;
+	width:350px;
+	position:relative;
+}
+
+.blue_robot {
+	transform: translate(100px,50px) skew(20deg) scale(2) rotate(45deg);
+
+	/*
+	    transale() is use to move the element.
+        skew() is used to bend the element
+        scale() is used to increase the size of the element.
+        rotate() is used to rotate the element.
+	*/
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-11-output.gif)
