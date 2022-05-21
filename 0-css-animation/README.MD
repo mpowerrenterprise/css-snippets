@@ -907,7 +907,7 @@ span:nth-child(7) {
 
 ## Example 11
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -925,7 +925,7 @@ span:nth-child(7) {
 </html
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 /* Animation Basics */
@@ -957,7 +957,7 @@ body {
 
 ## Example 12
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -976,7 +976,7 @@ body {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 
@@ -1002,9 +1002,9 @@ img {
 
 ![Banner Image](github-readme-contents/example-12-output.png)
 
-## Example 0
+## Example 13
 
-####  HTML CODE
+####  HTML Code
 
 ```html
 <html>
@@ -1024,7 +1024,7 @@ img {
 </html>
 ```
 
-####  CSS CODE
+####  CSS Code
 
 ```css
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900,300,300italic,400italic,900italic);
@@ -1073,4 +1073,341 @@ button:hover {
 
 #### Output
 
-![Banner Image](github-readme-contents/example-13-output.png)
+![Banner Image](github-readme-contents/example-13-output.gif)
+
+## Example 14
+
+####  HTML Code
+
+```html
+<html>
+	<head>
+		<title>Transition Basics</title>		
+		<link rel="stylesheet" href="styles.css" media="all" />
+	</head>
+	<body>
+
+	<div class="wrapper">
+		<h2></h2>
+		<p>Roll into the future right now and buy your very own robot!</p>
+		<button>BUY NOW</button>
+	</div>
+
+	</body>
+</html>
+```
+
+####  CSS Code
+
+```css
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,300,300italic,400italic,900italic);
+
+body {
+	background-color: #f7e4fe;
+	background-image: url('purple_diag_background.svg');
+	background-size: cover;
+	background-position: 0 -50px;
+	font-family: 'Lato', arial, helvetica, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+.wrapper {
+	margin: 12em auto 2em auto;
+	width:80%;
+	position:relative;
+	perspective: 1000px;/*This is the important for the rotate*/
+}
+
+p {
+	color: white;
+	text-align: center;
+}
+
+button {
+	cursor: hand;
+	background-color: #ff8d35;
+	color: white;
+	font:weight: 900;
+	font-size: 1.2rem;
+	border: none;
+	padding:1em 3em;
+	margin: 2em auto;
+	display:block;
+
+	transition: background .6s ease-in, transform .2s ease-out;
+}
+
+button:hover {
+	background: #c61140;
+	transform: scale(1.2) rotateX(30deg);
+}
+```
+#### Output
+
+![Banner Image](github-readme-contents/example-14-output.gif)
+
+## Example 15
+
+####  HTML Code
+
+```html
+<!doctype html>
+<html>
+    <head>
+
+        <title>Module 1 | CSS Transition Fundamentals</title>
+        <meta name="description" content="CSS Transition Fundamentals | Demos">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>CSS Transition Fundamentals | Demos</h1>
+
+        <!-- Blue to green -->
+        <section id='color'>
+
+             <h3>Blue to green</h3>
+
+            <div class='square'>
+            </div>
+
+        </section><hr>
+
+        <!-- Square to circle-->
+        <section id='circle'>
+
+            <h3>Square to circle</h3>
+
+            <div class='square'>
+            </div>
+
+        </section>
+    </body>
+</html>
+```
+
+####  CSS Code
+
+```css
+.square {
+	width: 250px;
+	height: 250px;
+	margin: 1rem 0 2rem 1rem;
+	background-color: blue;
+}
+
+/* Blue to green */
+#color .square {
+-webkit-transition-property: background-color;
+-moz-transition-property: background-color;
+-o-transition-property: background-color;
+-ms-transition-property: background-color;
+transition-property: background-color;
+-webkit-transition-duration: 5s;
+-moz-transition-duration: 5s;
+-o-transition-duration: 5s;
+-ms-transition-duration: 5s;
+transition-duration: 5s;
+}
+
+#color .square:hover {
+  background-color: green;
+}
+
+/* Square to circle */
+#circle .square {
+-webkit-transition: border-radius 2s 5s, background-color 3s 2s;
+-moz-transition: border-radius 2s 5s, background-color 3s 2s;
+-o-transition: border-radius 2s 5s, background-color 3s 2s;
+-ms-transition: border-radius 2s 5s, background-color 3s 2s;
+transition: border-radius 2s 5s, background-color 3s 2s;
+}
+
+#circle .square:hover {
+  border-radius: 50%;
+  background-color: purple;
+}
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-15-output.gif)
+
+## Example 16
+
+####  HTML Code
+
+```html
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>2DTransition &amp; Transform | Demos</title>
+        <meta name="description" content="This is a demonstration about CSS 2D transition">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>2DTransition &amp; Transform | Demos</h1><br>
+
+        <!-- The skew() method  -->
+        <section id='skew'>
+
+            <h3>The skew() method</h3>
+
+            <p>skews an element along the X and Y-axis by the given angle.</p>
+
+
+            <div class='square'>
+            </div>
+
+        <hr>
+        </section>
+
+        <!-- The scale() method -->
+        <section id='scale'>
+
+            <h3>The scale() method</h3>
+
+            <p>increases or decreases the size of an element.</p>
+
+            <div class='square'>
+
+                <div></div>
+            </div>
+
+        <hr>
+        </section>
+
+        <!-- The rotate() method -->
+        <section id='rotate'>
+
+            <h3>The rotate() method</h3>
+
+            <p>rotates an element clockwise or counter-clockwise according to a given degree.</p>
+
+            <div class='square'>
+            </div>
+
+        <hr>
+        </section>
+
+         <!-- The translate() method  -->
+        <section id='translate'>
+
+            <h3>The translate() method</h3>
+
+            <p>moves an element from its current position. This div element is moved 900 pixels to the right.</p>
+
+            <div class='square'>
+            </div>
+
+        <hr>
+        </section>           
+    </body>
+</html>
+```
+
+####  CSS Code
+
+```css
+section, h1 {
+ margin: 2rem 4rem;
+}
+.square {
+	width: 150px;
+	height: 150px;
+	background: blue;
+  position: relative;
+}
+
+
+/* The skew() method */
+#skew .square {
+  background-color: purple;
+  -webkit-transition: transform 5s;
+  -moz-transition: transform 5s;
+  -o-transition: transform 5s;
+  -ms-transition: transform 5s;
+  transition: transform 5s;
+}
+
+
+#skew .square:hover {
+ -webkit-transform: skewX(-20deg);
+ -moz-transform: skewX(-20deg);
+ -o-transform: skewX(-20deg);  
+ -ms-transform: skewX(-20deg);
+ transform: skewX(-20deg);
+}
+
+
+/* The scale() method */
+#scale .square div {
+   background: #000;  
+   position: absolute;
+   left: 25%;
+   top: 25%;
+   width: 75px;
+   height: 75px;
+   -webkit-transition: transform 5s, background-color 2s 1s;
+   -moz-transition: transform 5s, background-color 2s 1s;
+   -o-transition: transform 5s, background-color 2s 1s;
+   -ms-transition: transform 5s, background-color 2s 1s;
+   transition: transform 5s, background-color 2s 1s;
+}
+
+#scale .square div:hover {
+  background-color: blue;
+  -webkit-transform: scale(2,2);
+  -moz-transform: scale(2,2);
+  -o-transform: scale(2,2);
+  -ms-transform: scale(2,2);
+  transform: scale(2,2);
+}
+
+/* The rotate() method */
+#rotate .square {
+  background-color: tomato;
+  -webkit-transition: transform 5s;
+  -moz-transition: transform 5s;
+  -o-transition: transform 5s;
+  -ms-transition: transform 5s;
+  transition: transform 5s;
+}
+
+#rotate .square:hover {
+ -webkit-transform: rotate(360deg);
+ -moz-transform: rotate(360deg);
+ -o-transform: rotate(360deg);
+ -ms-transform: rotate(360deg);  
+ transform: rotate(360deg);
+}
+
+
+/* The translate() method */
+#translate .square {
+  background-color: orange;
+  -webkit-transition: transform 5s ease-in, background 3s 2s;
+  -moz-transition: transform 5s ease-in, background 3s 2s;
+  -o-transition: transform 5s ease-in, background 3s 2s;
+  -ms-transition: transform 5s ease-in, background 3s 2s;
+  transition: transform 5s ease-in, background 3s 2s;
+
+}
+
+#translate .square:hover {
+ background-color: green;
+ -webkit-transform: translateX(900px) rotate(360deg);
+ -moz-transform: translateX(900px) rotate(360deg);
+ -o-transform: translateX(900px) rotate(360deg);
+ -ms-transform: translateX(900px) rotate(360deg);
+ transform: translateX(900px) rotate(360deg);
+}    
+```
+
+#### Output
+
+![Banner Image](github-readme-contents/example-16-output.gif)
