@@ -3,12 +3,12 @@ html {
 	margin: 0;
 }
 /*limited reset*/
- {
+h1, h2, h3, h4, h5, h6, p, blockquote, div {
 	margin: 0;
 	padding: 0;
 }
-/* HTML5 block display for older browsers */
- {
+/* HTML5 display-role reset for older browsers */
+article, aside, figure, footer, header, nav, section {
 display: block;
 }
 body {
@@ -23,6 +23,10 @@ body {
 article {
 	width: 70%;
 }
+h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	color: #97552C;
+}
 h1 {
 	font: 1.6em Verdana, Geneva, sans-serif;
 	margin-bottom: .4em;
@@ -31,23 +35,9 @@ h1 {
 h2 {
 	font: 3.2em Georgia, "Times New Roman", Times, serif;
 	margin-bottom: .2em;
-	color: #97552C;
 }
 h3 {
 	font-size: 1.2em;
-	color: #97552C;
-}
-h4 {
-	font-size: 1em;
-	color: #97552C;
-}
-h5 {
-	font-size: 1em;
-	color: #97552C;
-}
-h6 {
-	font-size: 1em;
-	color: #97552C;
 }
 p {
 	margin-bottom: 1em;
