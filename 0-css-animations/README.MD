@@ -1411,3 +1411,24 @@ section, h1 {
 #### Output
 
 ![Banner Image](github-readme-contents/example-16-output.gif)
+
+
+## Other Notes
+
+### Alternate
+![Banner Image](notes/alternative.png)
+
+### Alternate Reverse
+![Banner Image](notes/alternative-reverse.png)
+
+### Animation Direction
+![Banner Image](notes/animation-direction.png)
+
+### Animation Fill Mode
+![Banner Image](notes/animation-fill-mode.png)
+
+### Timing Function 1
+![Banner Image](notes/timing-function-1.png)
+
+### Timing Function 2
+![Banner Image](notes/timing-function-2.png)
