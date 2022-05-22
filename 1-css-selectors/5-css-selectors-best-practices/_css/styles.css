@@ -19,20 +19,28 @@ html {
 h1, h2, h3, h4, h5, h6, p, blockquote, div {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 1em;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, figure, footer, header, nav, section {
 display: block;
 }
 body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%;
 	width: 80%;
 	margin: 0 auto 0;
 	padding: 2.5%;
 	background: white;
 	line-height: 1.8;
 }
+h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	color: #97552C;
+	margin-bottom: 0;
+}
 h1 {
-	font: 1.6em Verdana, Geneva, sans-serif;
+	font-size: 1.6em;
 	margin-bottom: .4em;
 	color: #456644;
 }
@@ -41,33 +49,13 @@ h2 {
 	margin-bottom: .2em;
 	color: #97552C;
 }
-h3 {
-	font: 1em Verdana, Geneva, sans-serif;
-	color: #97552C;
-}
-h4 {
-	font: 1em Verdana, Geneva, sans-serif;
-	color: #97552C;
-}
-h5 {
-	font: 1em Verdana, Geneva, sans-serif;
-	color: #97552C;
-}
-h6 {
-	font: 1em Verdana, Geneva, sans-serif;
-	color: #97552C;
-}
-p {
-	font: 1em Verdana, Geneva, sans-serif;
-	margin-bottom: 1em;
-}
 a {
 	color: #926A34;
 }
 a:hover {
 	color: #E2A643;
 }
-article figure pre {
+pre {
 	font-size: 1.4em;
 	color: white;
 	padding: .5em 1em;
@@ -79,32 +67,30 @@ article figure pre {
 	white-space: -o-pre-wrap;
 	word-wrap: break-word;
 }
-article figure pre.wrong {
+.wrong {
 	border-left-color: red;
 }
-article figure pre.correct {
+.correct {
 	border-left-color: green;
 }
-article figure pre span {
+pre span {
 	color: #F9F;
 	background: none;
 }
-article figure pre span.label {
+.label {
 	color: #FC0;
 }
-article figure pre figcaption {
+figcaption {
 	font-style: italic;
 }
-/* 
-#3 {
+figure:last-of-type {
 	padding-bottom: 1em;
 	border-bottom: 1px solid #333;
 	margin-bottom: 1em;
 }
-#3 {
+section:last-of-type figure:last-of-type {
 	border: none;
 }
-*/
 table {
 	border: 1px solid black;
 	border-collapse: collapse;
@@ -172,25 +158,30 @@ blockquote {
 	background: #F3ECDD;
 	padding: 1em;
 }
-
+blockquote span::before {
+	content: "\201C";
+}
+blockquote span::after {
+	content: "\201D";
+}
 cite {
 	display: block;
 	text-align:right;
 	font-weight: bold;
 }
-article {
+.summary {
 	float: left;
 	width: 65%;
 }
-aside {
+.resources {
 	float: right;
 	width: 25%;
 	margin-top: 4em;
 }
-aside section {
+.resources section {
 	background: #ECE3AA;
 }
-aside h3 {
+.resources h3 {
 	margin:  0;
 	padding: .5em 0;
 	text-align: center;
@@ -198,20 +189,20 @@ aside h3 {
 	font-weight: normal;
 	color: white;
 }
-aside ul, aside li {
+.resources ul, .resources li {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-aside li:nth-child(even) {
+.resources li:nth-child(even) {
 	background: #F3ECDD;
 }
-aside a {
+.resources a {
 	display: block;
 	text-decoration: none;
 	padding: .5em 1em;
 }
-aside a:hover {
+.resources a:hover {
 	background: #926A34;
 	color: white;
 }
@@ -237,14 +228,6 @@ pre {
 	padding: 2% 0 5%;
 }
 .compatibility, .resources, .summary {
-	float: none;
-	width: 100%;
-}
-article {
-	float: none;
-	width: 100%;
-}
-aside {
 	float: none;
 	width: 100%;
 }
