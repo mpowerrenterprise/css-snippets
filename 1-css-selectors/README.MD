@@ -10,5 +10,5 @@ A CSS selector is the first part of a CSS Rule. It is a pattern of elements and 
 3. [Advanced Selectors](2-advanced-css-selectors/)
 4. [Nearest Selectors](3-css-nearest-selector/)
 5. [NTH Selectors](4-nth-selectors/)
-6. [CSS Practices Selectors ](5-css-selectors-best-practices/)
-7. [CSS Resources Selectors ](6-css-selectors-resources/)
+6. [CSS Selectors Practices](5-css-selectors-best-practices/)
+7. [CSS Selectors Resources](6-css-selectors-resources/)
