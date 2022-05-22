@@ -7,7 +7,7 @@ Element selectors allow you to target matching HTML element types. They’re a v
 
 ### Syntax
 
-To write an element selector, simply use the corresponding HTML element, minus the brackets. To target all Heading Ones, for example, you’d simple write h1 instead of <h1>.
+To write an element selector, simply use the corresponding HTML element, minus the brackets. To target all Heading Ones, for example, you’d simple write h1 instead of ```<h1>```.
 
 ```css
 
