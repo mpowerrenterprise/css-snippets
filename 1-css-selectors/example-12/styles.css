@@ -1,0 +1,20 @@
+
+body {
+	background-color: #D8E8FA;
+}
+
+.wrapper {
+	margin: 2em auto 2em auto;
+    perspective:300px;/* We must add perspective to make 3d effects to the content of the img.*/
+                       /*We can give 100px or less than it to make it much more better*/
+                           
+}
+
+img {
+	display:block;
+	margin: 0 auto;
+    transform:rotateY(45deg);/*This is the value for the rotate*/
+
+}
+
+

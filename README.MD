@@ -10,7 +10,8 @@ This is a reference collection of CSS snippets codes. Cascading Style Sheets (CS
 ## Table of Contents
 
 
-1. [CSS Animations](0-css-animation/)
+1. [CSS Animations](0-css-animations/)
+2. [CSS Selectors](1-css-selectors/)
 
 
 Social Media Links

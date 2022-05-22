@@ -1,0 +1,36 @@
+
+body {
+	background-image: url('background.png');
+	background-size: cover;
+	background-position: 0px -250px;
+}
+
+.wrapper {
+	margin: 20em auto 2em auto;
+	width:80%;
+	position:relative;
+}
+
+.robot {
+
+  animation-name:slide;
+  animation-duration:3s;
+  animation-timing-function:ease-in;
+  animation-iteration-count:1;/*infinite will not stop*/
+  animation-delay:1s;
+  animation-fill-mode:forwards;/*The aniamtion-fill-mode is useful to decide how to finish the animation*/
+                               /*backwords and both*/
+
+
+  
+}
+
+@keyframes slide{
+	
+	from{transform:translate(0px);}
+	to{transform:translate(900px);}
+	
+	
+}
+
+
