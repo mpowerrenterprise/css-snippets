@@ -1,4 +1,4 @@
-## 01. Writing efficient selectors
+## Writing Efficient Selectors
 
 Writing efficient selectors goes far beyond just using the shortest selector possible. The selectors in your stylesheets work together to form a cohesive whole, and without a guiding strategy you’ll end up using more selectors than you need and in a form that doesn’t reflect the goals of your project. Authoring selectors should be guided more by the organizational goals of the site than by any perceived performance optimization strategy. While you should always strive to write the most efficient selectors possible, it’s far more important to author styles that are easy to maintain and extend
 
