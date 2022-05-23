@@ -1,0 +1,16 @@
+/*
+ * Using LESS functions
+ * 
+ */
+h1 {
+  color: #ff0000;
+}
+h2 {
+  color: #ff6666;
+}
+h3 {
+  color: #ff9999;
+}
+h4 {
+  color: #ffcccc;
+}

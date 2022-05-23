@@ -1,0 +1,14 @@
+/*
+ * Using LESS mixins with arguments
+ */
+#mypara {
+  -mox-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #0000ff;
+  -webkit-box-shadow: 10px 10px 15 #ff0000;
+  -mox-box-shadow: 10px 10px 15 #ff0000;
+  -ms-box-shadow: 10px 10px 15 #ff0000;
+  box-shadow: 10px 10px 15 #ff0000;
+}

@@ -1,0 +1,1 @@
+LESS allows variables to be defined with an @ symbol. The Variable assignment is done with a colon(:). The following table demonstrates the use of LESS variables in detail. Sr.No. Variables usage & Description.
