@@ -1,8 +1,14 @@
-# CSS SNIPPETS CODES
+# CSS Snippets
 
 ## Introduction
 
-This is a reference collection of CSS snippets codes. Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+Cascading Style Sheets (CSS) is a fundamental technology used to design and enhance the visual presentation of web pages. It works in tandem with HTML, which structures content, while CSS focuses on how that content is displayed. By using CSS, web developers and designers can control the look and feel of a website, ensuring a consistent and visually appealing user experience across different devices and browsers.
+
+CSS operates through the use of selectors and properties. Selectors identify which HTML elements a set of styles will apply to, and properties define the specific style changes, such as color, font, margin, and layout. This separation of structure and style not only makes websites easier to manage but also improves load times and enhances accessibility.
+
+One of the core features of CSS is its cascading nature. Styles can be applied from various sources, including external stylesheets, internal stylesheets, and inline styles. When multiple style rules conflict, CSS uses a system of specificity and inheritance to determine which rules take precedence. This flexibility allows for complex and dynamic designs while maintaining control over how styles are applied.
+
+CSS is also essential for creating responsive designs. With the rise of mobile and diverse screen sizes, responsive design ensures that web pages look and function well on any device. CSS media queries enable designers to apply different styles depending on the screen size, orientation, and other characteristics, making it possible to build websites that are both functional and aesthetically pleasing across a wide range of devices.
 
 ![Banner Image](github-readme-contents/css-banner-image.png)
 
@@ -15,7 +21,7 @@ This is a reference collection of CSS snippets codes. Cascading Style Sheets (CS
 3. [Less Preprocessor](2-less-preprocessor/)
 
 
-# CONTACT
+# Contact
 
 ### Website: 
 
